@@ -1,0 +1,105 @@
+<!--
+  Generated template for the DataEntryPolicyPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>ຂັ້ນຕອນ 2 ຂອງ 4</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <div text-center="">
+        <h4>ຂໍ້ມູນສັນຍາ</h4>
+        <hr>
+    </div>
+    <ion-fab bottom left >
+        <button (click)="addNewVehicle()" ion-fab>
+            <ion-icon name="add"></ion-icon>
+        </button>
+    </ion-fab>
+    <ion-grid>
+        <ion-row>
+            <ion-col col-6>
+                <ion-item>
+                    <ion-label stacked>ຊື່ (ລາວ)</ion-label>
+                    <ion-label>{{_clientData.First_Name_Lao}}</ion-label>
+                </ion-item>
+            </ion-col>
+            <ion-col col-6>
+                <ion-item>
+                    <ion-label stacked>ຊື່ (ອັງກິດ)</ion-label>
+                    <ion-label>{{_clientData.First_Name}}</ion-label>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-6>
+                <ion-item>
+                    <ion-label stacked>ເບີໂທ</ion-label>
+                    <ion-label>{{_clientData.Mobile}}</ion-label>
+                </ion-item>
+            </ion-col>
+            <ion-col col-6>
+                <ion-item>
+                    <ion-label stacked>ອີເມວ</ion-label>
+                    <ion-label>{{_clientData.Email}}</ion-label>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <table class="table table-bordered">
+        <thead class="header">
+        <th>
+            ລ/ດ
+        </th>
+        <th>
+            ເລກທີສັນຍາ
+        </th>
+        <th>
+            ປ້າຍລົດ
+        </th>
+        <th>
+            ຜະລິດຕະພັນ
+        </th>
+        <th>
+
+        </th>
+        </thead>
+        <tbody>
+        <tr class="table-data" style="vertical-align:middle;" *ngFor="let d of _vehicleList; let i = index" [attr.data-index]="i">
+            <td>{{i + 1}}</td>
+            <td>{{d.policy_no}}</td>
+            <td>{{d.plate_no}}</td>
+            <td>{{d.p_code}}</td>
+            <td>
+                <button class="no-margin" ion-button clear icon-only>
+                    <ion-icon ios="ios-eye" md="md-eye"></ion-icon>
+                </button>
+            </td>
+        </tr>
+        <tr *ngIf="!_vehicleList.length" class="table-data" style="vertical-align:middle;">
+            <td colspan="5" text-center="">
+                ຍັງບໍ່ມີຂໍ້ມູນລົດກະລຸນາເພີ່ມລົດ
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</ion-content>
+<ion-footer>
+    <ion-toolbar>
+        <ion-title>ເພີ່ມລົດ</ion-title>
+        <ion-buttons end>
+            <button ion-button icon-right icon-only [navPush]="goToDataEntrySummary">
+                ຖັດໄປ &nbsp;
+                <ion-icon ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-footer>

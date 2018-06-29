@@ -1,0 +1,84 @@
+<!--
+  Generated template for the DataEntryVehiclePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>ຂໍ້ມູນລົດ</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label>ປະເພດການນຳໃຊ້</ion-label>
+          <ion-select [(ngModel)]="_usageType" interface="popover">
+            <ion-option value="0">Private</ion-option>
+            <ion-option value="1">Commercial</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-label>ຜະລິດຕະພັນ</ion-label>
+          <ion-select [(ngModel)]="_vehicleData.P_Code" interface="popover">
+            <ion-option value="nes">NES</ion-option>
+            <ion-option value="n64">Nintendo64</ion-option>
+            <ion-option value="ps">PlayStation</ion-option>
+            <ion-option value="genesis">Sega Genesis</ion-option>
+            <ion-option value="saturn">Sega Saturn</ion-option>
+            <ion-option value="snes">SNES</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-label>ປະເພດລົດ</ion-label>
+          <ion-select [(ngModel)]="_usageType" interface="popover">
+            <ion-option value="0">Private</ion-option>
+            <ion-option value="1">Commercial</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-label>ຄວາມແຮງລົດ</ion-label>
+          <ion-select [(ngModel)]="_vehicleData.P_Code" interface="popover">
+            <ion-option value="nes">NES</ion-option>
+            <ion-option value="n64">Nintendo64</ion-option>
+            <ion-option value="ps">PlayStation</ion-option>
+            <ion-option value="genesis">Sega Genesis</ion-option>
+            <ion-option value="saturn">Sega Saturn</ion-option>
+            <ion-option value="snes">SNES</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <!--<ion-item inset>-->
+          <!--<ion-label floating i18n>Gotram*</ion-label>-->
+          <!--<ion-input type="text" (focus)="selectGotram()" readonly [(ngModel)]="user.gotram" name="gotram" #gotram="ngModel" required></ion-input>-->
+        <!--</ion-item>-->
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>ປ້ອນຂໍ້ມູນລົດໃຫ້ຄົບ</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-right icon-only (click)="saveVehicleData()">
+        ບັນທຶກ &nbsp;
+        <ion-icon ios="ios-checkmark-circle" md="md-checkmark-circle"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

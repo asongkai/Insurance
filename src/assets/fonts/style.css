@@ -1,0 +1,76 @@
+
+@font-face {
+    font-family: 'SEGOEUIL';
+    src: url('SEGOEUIL.eot');
+    src: local('SEGOEUIL'), url('SEGOEUIL.woff') format('woff'), url('SEGOEUIL.ttf') format('truetype');
+}
+/**    ========= Lao Fonts      =========      **/
+
+@font-face {
+    font-family: 'Asongkai';
+    src: url("Souliyo-Regular.eot?") format("eot"), url("Souliyo-Regular.woff") format("woff"), url("Souliyo-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/**   ========= Lao Fonts      =========      **/
+
+* {
+    font-family: 'SEGOEUIL', 'Asongkai';
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, .button, button, .text-area, video {
+    font-family: 'SEGOEUIL', 'Asongkai';
+}
+
+nav ul {
+    font-family: 'SEGOEUIL', 'Asongkai';
+}
+
+blockquote, q {
+    font-family: 'SEGOEUIL', 'Asongkai';
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    font-family: 'SEGOEUIL', 'Asongkai';
+}
+
+a {
+    font-family: 'SEGOEUIL', 'Asongkai';
+}
+
+ins {
+    font-family: 'SEGOEUIL', 'Asongkai';
+}
+
+mark {
+    font-family: 'SEGOEUIL', 'Asongkai';
+}
+
+del {
+    font-family: 'SEGOEUIL', 'Asongkai';
+}
+
+abbr[title], dfn[title] {
+    font-family: 'SEGOEUIL', 'Asongkai';
+}
+
+table {
+    font-family: 'SEGOEUIL', 'Asongkai';
+}
+
+hr {
+    font-family: 'SEGOEUIL', 'Asongkai';
+}
+
+input, select {
+    font-family: 'SEGOEUIL', 'Asongkai';
+}
+
+.button-clear {
+    font-family: 'SEGOEUIL', 'Asongkai';
+}
+.sweet-alert {
+    font-family: 'SEGOEUIL', 'Asongkai';
+}
